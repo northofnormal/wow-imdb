@@ -1,0 +1,44 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+.jumbotron {
+  background-color: transparent;
+}
+
+/**
+  * Featured Movies
+**/
+
+.movie-wrapper {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.movie-wrapper a {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.title, .link {
+  line-height: 14px;
+  padding: 5px, 10px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.poster {
+  margin-bottom: -32px;
+}
+
+.glyphicon {
+  color: #fff;
+  float: right;
+  margin-top: -25px;
+  margin-right: 15px;
+  position: relative;
+  z-index: 3;
+}

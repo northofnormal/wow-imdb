@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the skeletor installation profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Performs actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function skeletor_install() {
+  // Set the default theme.
+  $default_theme = variable_get('theme_default', 'bartik');
+
+  // Install modules.
+  $modules = array(
+    // Core modules
+    'block',
+    'dblog',
+
+    // Contrib modules
+    'admin_menu',
+    'admin_menu_toolbar',
+    'devel',
+
+    // Custom modules
+    'wowinfo',
+  );
+  module_enable($modules);
+}
